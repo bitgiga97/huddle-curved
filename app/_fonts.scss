@@ -1,0 +1,76 @@
+@mixin h1-text-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #00252E;
+}
+
+@mixin h1-text-desktop {
+    @include h1-text-mobile;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+@mixin p-text-mobile {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+}
+
+@mixin p1-text-desktop {
+    @include p-text-mobile;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin p2-text-desktop {
+    @include p-text-mobile;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin p3-text-mobile {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #808E9A;
+}
+
+@mixin h2-text-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00252E;
+}
+
+@mixin h2-text-desktop {
+    @include h2-text-mobile;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+@mixin header-btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.41177px;
+    line-height: 13px;
+    color: #FF52C1;
+}
+
+@mixin h2-footer {
+    @include h2-text-mobile;
+    text-align: left;
+    color: #ffffff;
+}

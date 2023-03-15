@@ -5,7 +5,7 @@
 @import "variables";
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 151px;
     margin-top: 24px;
@@ -280,7 +280,7 @@ footer {
             margin-bottom: 48px;
         }
         .social-icons {
-            width: 104px;
+            width: 115px;
             height: 23px;
             display: flex;
             gap: 17.3px;
@@ -288,11 +288,13 @@ footer {
                 width: 23px;
                 height: 23px;
                 background-image: url(/huddle-curved/images/fb-logo.svg);
+                background-repeat: no-repeat;
             }
             .twitter {
-                width: 23px;
-                height: 23px;
+                width: 25px;
+                height: 25px;
                 background-image: url(/huddle-curved/images/twitter-logo.svg);
+                background-repeat: no-repeat;
             }
             .instagram {
                 width: 29px;
@@ -301,6 +303,256 @@ footer {
                 background-size: cover;
                 background-repeat: no-repeat;
                 margin-top: -2px;
+            }
+        }
+    }
+}
+
+// Responsive design for desktop version
+@media screen and (min-width:1440px) {
+    header {
+        height: 40px;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 63px;
+        margin-top: 78px;
+        margin-bottom: 225px;
+        .header-btn {
+            width: 126px;
+            height: 40px;
+            border-radius: 50px;
+            font-size: 16px;
+            line-height: 22px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+        .header-logo {
+            width: 240px;
+            height: 40px;
+            background-repeat: no-repeat;
+        }
+    }
+    .intro {
+        h1 {
+            @include h1-text-desktop;
+        }
+        p {
+            @include p1-text-desktop;
+            width: 600px;
+        }
+        .intro-btn {
+            width: 400px;
+            height: 80px;
+            border-radius: 50px;
+            @include p1-text-desktop;
+            color: #ffffff;
+            margin-bottom: 120px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+    }
+    .bg-views {
+        .bg-img {
+            width: 1016px;
+            height: 720px;
+        }
+        .views {
+            flex-direction: row;
+            gap: 341px;
+            width: 880px;
+            height: 222px;
+            margin: 0 auto;
+            align-items: center;
+            .msg,
+            .formed {
+                background-size: 56px 56px;
+                height: 202px;
+                h2 {
+                    font-size: 96px;
+                    line-height: 144px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 36px;
+                    width: 245px;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+    .cards {
+        h2 {
+            @include h2-text-desktop;
+        }
+        .grow {
+            margin-bottom: 103px;
+            height: 963px;
+            .top-bg {
+                background-image: url(/huddle-curved/images/bg-section-top-desktop-1.svg);
+                height: 160px;
+            }
+            .bottom-bg {
+                background-image: url(/huddle-curved/images/bg-section-bottom-desktop-1.svg);
+                height: 135px;
+            }
+            .for-bg {
+                height: 560px;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 25% 50% 25%;
+                .grow-bg {
+                    grid-column: 2/2;
+                    grid-row: 2/2;
+                    width: 560px;
+                    height: 560px;
+                    margin-top: 150px;
+                }
+                h2 {
+                    grid-column: 1/1;
+                    grid-row: 2/2;
+                    width: 520px;
+                    margin-left: 16px;
+                    margin-bottom: 0;
+                }
+                p {
+                    grid-column: 1/1;
+                    grid-row: 3/3;
+                    width: 520px;
+                    height: 72px;
+                    margin-top: -270px;
+                    margin-left: 130px;
+                    @include p2-text-desktop;
+                    text-align: left;
+                }
+            }
+        }
+        .flow {
+            height: 560px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 25% 50% 25%;
+            margin-bottom: 0;
+            .flow-bg {
+                width: 560px;
+                height: 560px;
+                margin-top: 500px;
+                margin-left: 120px;
+            }
+            p {
+                width: 520px;
+                grid-column: 2/2;
+                @include p2-text-desktop;
+                text-align: left;
+                margin-left: 25px;
+            }
+            h2 {
+                width: 520px;
+                margin-bottom: -270px;
+            }
+        }
+        .users {
+            .top-bg-2 {
+                background-image: url(/huddle-curved/images/bg-section-top-desktop-2.svg);
+                height: 156px;
+            }
+            .bottom-bg-2 {
+                background-image: url(/huddle-curved/images/bg-section-bottom-desktop-2.svg);
+                height: 139px;
+            }
+            .for-bg-2 {
+                height: 560px;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 25% 50% 25%;
+                .users-bg {
+                    grid-column: 2/2;
+                    grid-row: 2/2;
+                    width: 560px;
+                    height: 560px;
+                    margin-top: 150px;
+                }
+                h2 {
+                    grid-column: 1/1;
+                    grid-row: 2/2;
+                    width: 220px;
+                    margin-left: 130px;
+                    margin-bottom: 0;
+                }
+                p {
+                    grid-column: 1/1;
+                    grid-row: 3/3;
+                    width: 520px;
+                    height: 72px;
+                    margin-top: -270px;
+                    margin-left: 130px;
+                    @include p2-text-desktop;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .ready {
+        margin-bottom: 150px;
+        h2 {
+            @include h2-text-desktop;
+        }
+        .ready-btn {
+            width: 400px;
+            height: 80px;
+            border-radius: 50px;
+            @include p1-text-desktop;
+            color: #ffffff;
+            margin-bottom: 120px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+    }
+    footer {
+        .bg-footer {
+            height: 170px;
+            background-image: url(/huddle-curved/images/bg-footer-top-desktop.svg);
+        }
+        .for-bg-footer {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            .input {
+                width: 520px;
+                flex-direction: row;
+                gap: 40px;
+                padding: 0;
+                button:hover {
+                    cursor: pointer;
+                    background-color: #FF8ED7;
+                }
+            }
+        }
+        h2 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .form {
+            width: 520px;
+        }
+        .contact {
+            .social-icons {
+                .fb:hover,
+                .instagram:hover,
+                .twitter:hover {
+                    cursor: pointer;
+                    fill: #00C7FA;
+                }
             }
         }
     }

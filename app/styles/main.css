@@ -112,6 +112,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -127,7 +128,7 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 151px;
   margin-top: 24px;
@@ -544,7 +545,7 @@ footer .contact .mail {
   margin-bottom: 48px;
 }
 footer .contact .social-icons {
-  width: 104px;
+  width: 115px;
   height: 23px;
   display: flex;
   gap: 17.3px;
@@ -553,11 +554,13 @@ footer .contact .social-icons .fb {
   width: 23px;
   height: 23px;
   background-image: url(/huddle-curved/images/fb-logo.svg);
+  background-repeat: no-repeat;
 }
 footer .contact .social-icons .twitter {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   background-image: url(/huddle-curved/images/twitter-logo.svg);
+  background-repeat: no-repeat;
 }
 footer .contact .social-icons .instagram {
   width: 29px;
@@ -566,4 +569,313 @@ footer .contact .social-icons .instagram {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -2px;
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    height: 40px;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 63px;
+    margin-top: 78px;
+    margin-bottom: 225px;
+  }
+  header .header-btn {
+    width: 126px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  header .header-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  header .header-logo {
+    width: 240px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
+  .intro h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #00252E;
+    font-size: 48px;
+    line-height: 72px;
+  }
+  .intro p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+    font-size: 20px;
+    line-height: 30px;
+    width: 600px;
+  }
+  .intro .intro-btn {
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 120px;
+  }
+  .intro .intro-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  .bg-views .bg-img {
+    width: 1016px;
+    height: 720px;
+  }
+  .bg-views .views {
+    flex-direction: row;
+    gap: 341px;
+    width: 880px;
+    height: 222px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .bg-views .views .msg,
+.bg-views .views .formed {
+    background-size: 56px 56px;
+    height: 202px;
+  }
+  .bg-views .views .msg h2,
+.bg-views .views .formed h2 {
+    font-size: 96px;
+    line-height: 144px;
+  }
+  .bg-views .views .msg p,
+.bg-views .views .formed p {
+    font-size: 24px;
+    line-height: 36px;
+    width: 245px;
+    margin-top: -15px;
+  }
+  .cards h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00252E;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .cards .grow {
+    margin-bottom: 103px;
+    height: 963px;
+  }
+  .cards .grow .top-bg {
+    background-image: url(/huddle-curved/images/bg-section-top-desktop-1.svg);
+    height: 160px;
+  }
+  .cards .grow .bottom-bg {
+    background-image: url(/huddle-curved/images/bg-section-bottom-desktop-1.svg);
+    height: 135px;
+  }
+  .cards .grow .for-bg {
+    height: 560px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 50% 25%;
+  }
+  .cards .grow .for-bg .grow-bg {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    width: 560px;
+    height: 560px;
+    margin-top: 150px;
+  }
+  .cards .grow .for-bg h2 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 520px;
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+  .cards .grow .for-bg p {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    width: 520px;
+    height: 72px;
+    margin-top: -270px;
+    margin-left: 130px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .cards .flow {
+    height: 560px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 50% 25%;
+    margin-bottom: 0;
+  }
+  .cards .flow .flow-bg {
+    width: 560px;
+    height: 560px;
+    margin-top: 500px;
+    margin-left: 120px;
+  }
+  .cards .flow p {
+    width: 520px;
+    grid-column: 2/2;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .cards .flow h2 {
+    width: 520px;
+    margin-bottom: -270px;
+  }
+  .cards .users .top-bg-2, .cards .users .bottom-bg-2 {
+    background-image: url(/huddle-curved/images/bg-section-top-desktop-2.svg);
+    height: 156px;
+  }
+  .cards .users .bottom-bg-2 {
+    background-image: url(/huddle-curved/images/bg-section-bottom-desktop-2.svg);
+    height: 139px;
+  }
+  .cards .users .for-bg-2 {
+    height: 560px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 50% 25%;
+  }
+  .cards .users .for-bg-2 .users-bg {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    width: 560px;
+    height: 560px;
+    margin-top: 150px;
+  }
+  .cards .users .for-bg-2 h2 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 220px;
+    margin-left: 130px;
+    margin-bottom: 0;
+  }
+  .cards .users .for-bg-2 p {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    width: 520px;
+    height: 72px;
+    margin-top: -270px;
+    margin-left: 130px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .ready {
+    margin-bottom: 150px;
+  }
+  .ready h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00252E;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .ready .ready-btn {
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #00252E;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 120px;
+  }
+  .ready .ready-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  footer .bg-footer {
+    height: 170px;
+    background-image: url(/huddle-curved/images/bg-footer-top-desktop.svg);
+  }
+  footer .for-bg-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  footer .for-bg-footer .input {
+    width: 520px;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+  }
+  footer .for-bg-footer .input button:hover {
+    cursor: pointer;
+    background-color: #FF8ED7;
+  }
+  footer h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  footer p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  footer .form {
+    width: 520px;
+  }
+  footer .contact .social-icons .fb:hover,
+footer .contact .social-icons .instagram:hover,
+footer .contact .social-icons .twitter:hover {
+    cursor: pointer;
+    fill: #00C7FA;
+  }
 }/*# sourceMappingURL=main.css.map */
